@@ -1,131 +1,35 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Raptor Labs — Coming Soon</title>
-  <meta name="description" content="Raptor Labs. Something new is on the way.">
-  <meta property="og:title" content="Raptor Labs">
-  <meta property="og:description" content="Something new is on the way.">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #000000;
-      --fg: #f2f3f5;
-      --muted: #8a9099;
-      --line: rgba(255, 255, 255, 0.08);
-      --accent: #a855f7;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Inter", system-ui, -apple-system, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      padding: 32px 24px;
-      background-image:
-        radial-gradient(ellipse 60% 50% at 50% 0%, rgba(168, 85, 247, 0.07), transparent 70%),
-        linear-gradient(var(--line) 1px, transparent 1px),
-        linear-gradient(90deg, var(--line) 1px, transparent 1px);
-      background-size: auto, 64px 64px, 64px 64px;
-      background-position: center top, center, center;
-    }
-    header, footer {
-      width: 100%;
-      max-width: 1040px;
-      margin: 0 auto;
-      font-size: 14px;
-      color: var(--muted);
-    }
-    header { display: flex; align-items: center; }
-    header img { height: 56px; width: auto; display: block; mix-blend-mode: screen; }
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      max-width: 1040px;
-      margin: 0 auto;
-      padding: 64px 0;
-    }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      align-self: flex-start;
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--muted);
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 6px 12px;
-      margin-bottom: 28px;
-      background: rgba(255, 255, 255, 0.02);
-    }
-    .dot {
-      width: 7px; height: 7px; border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.6);
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.5); }
-      70% { box-shadow: 0 0 0 8px rgba(168, 85, 247, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(168, 85, 247, 0); }
-    }
-    h1 {
-      font-size: clamp(44px, 9vw, 104px);
-      font-weight: 600;
-      line-height: 0.98;
-      letter-spacing: -0.045em;
-      max-width: 12ch;
-    }
-    h1 span { color: var(--muted); }
-    p.lede {
-      margin-top: 28px;
-      font-size: clamp(17px, 2vw, 20px);
-      line-height: 1.55;
-      color: var(--muted);
-      max-width: 34ch;
-    }
-    p.contact {
-      margin-top: 20px;
-      font-size: 15px;
-      color: var(--muted);
-    }
-    p.contact a {
-      color: var(--fg);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent);
-      padding-bottom: 1px;
-    }
-    p.contact a:hover { color: var(--accent); }
-    footer { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-    @media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="logo.png" alt="Raptor Labs" width="900" height="275">
-  </header>
-  <main>
-    <div class="badge"><span class="dot"></span>Coming soon</div>
-    <h1>Something new is <span>on the way.</span></h1>
-    <p class="lede">We're building in stealth. Check back soon.</p>
-    <p class="contact">Contact <a href="mailto:raza@raptorlabs.co">raza@raptorlabs.co</a> for more information.</p>
-  </main>
-  <footer>
-    <span>&copy; <span id="y">2026</span> Raptor Labs</span>
-    <span>raptorlabs.co</span>
-  </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Raptor Labs | AI and Engineering Consulting</title>
+    <meta name="description" content="AI and engineering consultancy. Senior engineers embedded with your team to build AI that ships." />
+    <meta name="theme-color" content="#050506" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Raptor Labs" />
+    <meta property="og:url" content="https://raptorlabs.co/" />
+    <meta property="og:title" content="Raptor Labs" />
+    <meta property="og:description" content="AI and engineering consultancy. Senior engineers embedded with your team to build AI that ships." />
+    <meta property="og:image" content="https://raptorlabs.co/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Raptor Labs" />
+    <meta name="twitter:description" content="AI and engineering consultancy. Senior engineers embedded with your team to build AI that ships." />
+    <meta name="twitter:image" content="https://raptorlabs.co/og.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="/assets/world/scene-01-poster.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
